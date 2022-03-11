@@ -4,7 +4,8 @@ using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace HairSalon.Controllers{
+namespace HairSalon.Controllers
+{
   public class StylistsController : Controller
   {
     private readonly HairSalonContext _db;
@@ -32,7 +33,7 @@ namespace HairSalon.Controllers{
       return RedirectToAction("Index");
     }
 
-    public ActionResults Details(int id)
+    public ActionResult Details(int id)
     {
       Stylist thisStylist = db.Stylists.FirstOrDefault(Stylist => Stylist.StylistId == id);
       return View(thisStylist);
