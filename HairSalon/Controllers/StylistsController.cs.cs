@@ -41,8 +41,8 @@ namespace HairSalon.Controllers
 
      public ActionResult Edit(int id)
     {
-      var thisCategory = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
-      return View(thisCategory);
+      var thisStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+      return View(thisStylist);
     }
 
     [HttpPost]
