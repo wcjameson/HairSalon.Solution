@@ -35,7 +35,11 @@ This webapp allows the user to add and organize different clients for different 
 }
 * User id and password will be your own
 * Open the project in your terminal, navigate to the HairSalon.Solution directory, and enter the following
+* dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0
+* dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2
+* dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0
 * dotnet restore
+* dotnet build
 * dotnet run
 * Open your browser and navigate to http://localhost:5000/
 
